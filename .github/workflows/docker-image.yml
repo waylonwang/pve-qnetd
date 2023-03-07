@@ -34,7 +34,7 @@ jobs:
       with:
      #这里用到了github的secrets功能，避免账户和密码随仓库泄露
        username: ${{ secrets.DOCKERHUB_USERNAME }}
-       password: ${{ secrets.DOCKERHUB_PASSWORD }}
+       password: ${{ secrets.DOCKERHUB_TOKEN }}
 #        password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build and push
       #导入这个模块来完成自动编译和推送
